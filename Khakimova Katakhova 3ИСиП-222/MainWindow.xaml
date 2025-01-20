@@ -1,12 +1,25 @@
 ﻿<Window x:Class="Khakimova_Katakhova_3ИСиП_222.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Khakimova_Katakhova_3ИСиП_222"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Практическая работа 1" Height="450" Width="800"
+        Background="{StaticResource BackgroundBrush}">
     <Grid>
-        
+        <Image Name="FunctionImage" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,76,0,0" Width="753" Height="48" Source="C:\Users\227141\Desktop\снимок.png" ToolTip="Скриншот математической функции"/>
+
+        <Label Content="Введите i:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="226,173,0,0" Foreground="{StaticResource TextBrush}"/>
+        <TextBox Name="InputI" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="324,177,0,0" Width="100" ToolTip="Введите значение i" Background="{StaticResource PrimaryBrush}" Foreground="{StaticResource TextBrush}"/>
+
+        <Label Content="Введите x:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="227,0,0,0" Foreground="{StaticResource TextBrush}" RenderTransformOrigin="0.593,0.876"/>
+        <TextBox Name="InputX" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="324,0,0,0" Width="100" ToolTip="Введите значение x" Background="{StaticResource PrimaryBrush}" Foreground="{StaticResource TextBrush}"/>
+
+        <Label Content="Результат:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="227,231,0,0" Foreground="{StaticResource TextBrush}"/>
+        <TextBox Name="OutputResult" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="324,235,0,0" Width="100" IsReadOnly="True" ToolTip="Результат вычисления" Background="{StaticResource SecondaryBrush}" Foreground="{StaticResource TextBrush}"/>
+
+        <RadioButton Name="shRadioButton" Content="sh(x)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,187,0,0" GroupName="FunctionGroup" ToolTip="Гиперболический синус x" Height="16" Foreground="{StaticResource TextBrush}"/>
+        <RadioButton Name="x2RadioButton" Content="x^2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,215,0,0" GroupName="FunctionGroup" ToolTip="x в квадрате" RenderTransformOrigin="1.852,-1.404" Foreground="{StaticResource TextBrush}"/>
+        <RadioButton Name="exRadioButton" Content="e^x" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,245,0,0" GroupName="FunctionGroup" ToolTip="Экспонента x" Foreground="{StaticResource TextBrush}"/>
+
+        <Button Content="Вычислить" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="164,330,0,0" Width="123" Click="Calculate_Click" ToolTip="Вычислить значение функции" Height="34" Background="{StaticResource PrimaryBrush}" Foreground="{StaticResource TextBrush}"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="374,330,0,0" Width="126" Click="Clear_Click" ToolTip="Очистить все поля" Height="34" Background="{StaticResource SecondaryBrush}" Foreground="{StaticResource TextBrush}"/>
     </Grid>
 </Window>
