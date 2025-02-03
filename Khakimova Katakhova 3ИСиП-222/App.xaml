@@ -1,7 +1,7 @@
 ﻿<Application x:Class="Khakimova_Katakhova_3ИСиП_222.App"
                          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:PracticalWork2"
+             xmlns:local="clr-namespace:Khakimova_Katakhova_3ИСиП_222"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <Color x:Key="PrimaryColor">#FFB6C1</Color>
