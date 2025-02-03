@@ -4,7 +4,7 @@
         Title="Практическая работа 1" Height="450" Width="800"
         Background="{StaticResource BackgroundBrush}">
     <Grid>
-        <Image Name="FunctionImage" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,76,0,0" Width="753" Height="48" Source="C:\Users\227141\Desktop\снимок.png" ToolTip="Скриншот математической функции"/>
+        <Image Name="FunctionImage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="458" Height="148" Source="C:\Users\Гульнара\source\repos\Khakimova-Katakhova-3--222\снимок.png" ToolTip="Скриншот математической функции" Margin="226,0,0,0"/>
 
         <Label Content="Введите i:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="226,173,0,0" Foreground="{StaticResource TextBrush}"/>
         <TextBox Name="InputI" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="324,177,0,0" Width="100" ToolTip="Введите значение i" Background="{StaticResource PrimaryBrush}" Foreground="{StaticResource TextBrush}"/>
